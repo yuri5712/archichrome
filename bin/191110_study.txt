@@ -1,0 +1,2362 @@
+C:\Users\yuriK\Anaconda2\envs\python35\python.exe C:/Users/yuriK/OneDrive/ドキュメント/#colour/code/Tensorflow-Segmentation-master/Tensorflow-Segmentation-master/convolutional_autoencoder.py
+segmentation_result.shape: (?, 128, 128, 3), targets.shape: (?, 128, 128, 3)
+os.listdir(os.path.join(folder, 'targets')):  ['cmp_b0001.png', 'cmp_b0002.png', 'cmp_b0003.png', 'cmp_b0004.png', 'cmp_b0005.png', 'cmp_b0006.png', 'cmp_b0007.png', 'cmp_b0008.png', 'cmp_b0009.png', 'cmp_b0010.png', 'cmp_b0011.png', 'cmp_b0012.png', 'cmp_b0013.png', 'cmp_b0014.png', 'cmp_b0015.png', 'cmp_b0016.png', 'cmp_b0017.png', 'cmp_b0018.png', 'cmp_b0019.png', 'cmp_b0020.png', 'cmp_b0021.png', 'cmp_b0022.png', 'cmp_b0023.png', 'cmp_b0024.png', 'cmp_b0025.png', 'cmp_b0026.png', 'cmp_b0027.png', 'cmp_b0028.png', 'cmp_b0029.png', 'cmp_b0030.png', 'cmp_b0031.png', 'cmp_b0032.png', 'cmp_b0033.png', 'cmp_b0034.png', 'cmp_b0035.png', 'cmp_b0036.png', 'cmp_b0037.png', 'cmp_b0038.png', 'cmp_b0039.png', 'cmp_b0040.png', 'cmp_b0041.png', 'cmp_b0042.png', 'cmp_b0043.png', 'cmp_b0044.png', 'cmp_b0045.png', 'cmp_b0046.png', 'cmp_b0047.png', 'cmp_b0048.png', 'cmp_b0049.png', 'cmp_b0050.png', 'cmp_b0051.png', 'cmp_b0052.png', 'cmp_b0053.png', 'cmp_b0054.png', 'cmp_b0055.png', 'cmp_b0056.png', 'cmp_b0057.png', 'cmp_b0058.png', 'cmp_b0059.png', 'cmp_b0060.png', 'cmp_b0061.png', 'cmp_b0062.png', 'cmp_b0063.png', 'cmp_b0064.png', 'cmp_b0065.png', 'cmp_b0066.png', 'cmp_b0067.png', 'cmp_b0068.png', 'cmp_b0069.png', 'cmp_b0070.png', 'cmp_b0071.png', 'cmp_b0072.png', 'cmp_b0073.png', 'cmp_b0074.png', 'cmp_b0075.png', 'cmp_b0076.png', 'cmp_b0077.png', 'cmp_b0078.png', 'cmp_b0079.png', 'cmp_b0080.png', 'cmp_b0081.png', 'cmp_b0082.png', 'cmp_b0083.png', 'cmp_b0084.png', 'cmp_b0085.png', 'cmp_b0086.png', 'cmp_b0087.png', 'cmp_b0088.png', 'cmp_b0089.png', 'cmp_b0090.png', 'cmp_b0091.png', 'cmp_b0092.png', 'cmp_b0093.png', 'cmp_b0094.png', 'cmp_b0095.png', 'cmp_b0096.png', 'cmp_b0097.png', 'cmp_b0098.png', 'cmp_b0099.png', 'cmp_b0100.png', 'cmp_b0101.png', 'cmp_b0102.png', 'cmp_b0103.png', 'cmp_b0104.png', 'cmp_b0105.png', 'cmp_b0106.png', 'cmp_b0107.png', 'cmp_b0108.png', 'cmp_b0109.png', 'cmp_b0110.png', 'cmp_b0111.png', 'cmp_b0112.png', 'cmp_b0113.png', 'cmp_b0114.png', 'cmp_b0115.png', 'cmp_b0116.png', 'cmp_b0117.png', 'cmp_b0118.png', 'cmp_b0119.png', 'cmp_b0120.png', 'cmp_b0121.png', 'cmp_b0122.png', 'cmp_b0123.png', 'cmp_b0124.png', 'cmp_b0125.png', 'cmp_b0126.png', 'cmp_b0127.png', 'cmp_b0128.png', 'cmp_b0129.png', 'cmp_b0130.png', 'cmp_b0131.png', 'cmp_b0132.png', 'cmp_b0133.png', 'cmp_b0134.png', 'cmp_b0135.png', 'cmp_b0136.png', 'cmp_b0137.png', 'cmp_b0138.png', 'cmp_b0139.png', 'cmp_b0140.png', 'cmp_b0141.png', 'cmp_b0142.png', 'cmp_b0143.png', 'cmp_b0144.png', 'cmp_b0145.png', 'cmp_b0146.png', 'cmp_b0147.png', 'cmp_b0148.png', 'cmp_b0149.png', 'cmp_b0150.png', 'cmp_b0151.png', 'cmp_b0152.png', 'cmp_b0153.png', 'cmp_b0154.png', 'cmp_b0155.png', 'cmp_b0156.png', 'cmp_b0157.png', 'cmp_b0158.png', 'cmp_b0159.png', 'cmp_b0160.png', 'cmp_b0161.png', 'cmp_b0162.png', 'cmp_b0163.png', 'cmp_b0164.png', 'cmp_b0165.png', 'cmp_b0166.png', 'cmp_b0167.png', 'cmp_b0168.png', 'cmp_b0169.png', 'cmp_b0170.png', 'cmp_b0171.png', 'cmp_b0172.png', 'cmp_b0173.png', 'cmp_b0174.png', 'cmp_b0175.png', 'cmp_b0176.png', 'cmp_b0177.png', 'cmp_b0178.png', 'cmp_b0179.png', 'cmp_b0180.png', 'cmp_b0181.png', 'cmp_b0182.png', 'cmp_b0183.png', 'cmp_b0184.png', 'cmp_b0185.png', 'cmp_b0186.png', 'cmp_b0187.png', 'cmp_b0188.png', 'cmp_b0189.png', 'cmp_b0190.png', 'cmp_b0191.png', 'cmp_b0192.png', 'cmp_b0193.png', 'cmp_b0194.png', 'cmp_b0195.png', 'cmp_b0196.png', 'cmp_b0197.png', 'cmp_b0198.png', 'cmp_b0199.png', 'cmp_b0200.png', 'cmp_b0201.png', 'cmp_b0202.png', 'cmp_b0203.png', 'cmp_b0204.png', 'cmp_b0205.png', 'cmp_b0206.png', 'cmp_b0207.png', 'cmp_b0208.png', 'cmp_b0209.png', 'cmp_b0210.png', 'cmp_b0211.png', 'cmp_b0212.png', 'cmp_b0213.png', 'cmp_b0214.png', 'cmp_b0215.png', 'cmp_b0216.png', 'cmp_b0217.png', 'cmp_b0218.png', 'cmp_b0219.png', 'cmp_b0220.png', 'cmp_b0221.png', 'cmp_b0222.png', 'cmp_b0223.png', 'cmp_b0224.png', 'cmp_b0225.png', 'cmp_b0226.png', 'cmp_b0227.png', 'cmp_b0228.png', 'cmp_b0229.png', 'cmp_b0230.png', 'cmp_b0231.png', 'cmp_b0232.png', 'cmp_b0233.png', 'cmp_b0234.png', 'cmp_b0235.png', 'cmp_b0236.png', 'cmp_b0237.png', 'cmp_b0238.png', 'cmp_b0239.png', 'cmp_b0240.png', 'cmp_b0241.png', 'cmp_b0242.png', 'cmp_b0243.png', 'cmp_b0244.png', 'cmp_b0245.png', 'cmp_b0246.png', 'cmp_b0247.png', 'cmp_b0248.png', 'cmp_b0249.png', 'cmp_b0250.png', 'cmp_b0251.png', 'cmp_b0252.png', 'cmp_b0253.png', 'cmp_b0254.png', 'cmp_b0255.png', 'cmp_b0256.png', 'cmp_b0257.png', 'cmp_b0258.png', 'cmp_b0259.png', 'cmp_b0260.png', 'cmp_b0261.png', 'cmp_b0262.png', 'cmp_b0263.png', 'cmp_b0264.png', 'cmp_b0265.png', 'cmp_b0266.png', 'cmp_b0267.png', 'cmp_b0268.png', 'cmp_b0269.png', 'cmp_b0270.png', 'cmp_b0271.png', 'cmp_b0272.png', 'cmp_b0273.png', 'cmp_b0274.png', 'cmp_b0275.png', 'cmp_b0276.png', 'cmp_b0277.png', 'cmp_b0278.png', 'cmp_b0279.png', 'cmp_b0280.png', 'cmp_b0281.png', 'cmp_b0282.png', 'cmp_b0283.png', 'cmp_b0284.png', 'cmp_b0285.png', 'cmp_b0286.png', 'cmp_b0287.png', 'cmp_b0288.png', 'cmp_b0289.png', 'cmp_b0290.png', 'cmp_b0291.png', 'cmp_b0292.png', 'cmp_b0293.png', 'cmp_b0294.png', 'cmp_b0295.png', 'cmp_b0296.png', 'cmp_b0297.png', 'cmp_b0298.png', 'cmp_b0299.png', 'cmp_b0300.png', 'cmp_b0301.png', 'cmp_b0302.png', 'cmp_b0303.png', 'cmp_b0304.png', 'cmp_b0305.png', 'cmp_b0306.png', 'cmp_b0307.png', 'cmp_b0308.png', 'cmp_b0309.png', 'cmp_b0310.png', 'cmp_b0311.png', 'cmp_b0312.png', 'cmp_b0313.png', 'cmp_b0314.png', 'cmp_b0315.png', 'cmp_b0316.png', 'cmp_b0317.png', 'cmp_b0318.png', 'cmp_b0319.png', 'cmp_b0320.png', 'cmp_b0321.png', 'cmp_b0322.png', 'cmp_b0323.png', 'cmp_b0324.png', 'cmp_b0325.png', 'cmp_b0326.png', 'cmp_b0327.png', 'cmp_b0328.png', 'cmp_b0329.png', 'cmp_b0330.png', 'cmp_b0331.png', 'cmp_b0332.png', 'cmp_b0333.png', 'cmp_b0334.png', 'cmp_b0335.png', 'cmp_b0336.png', 'cmp_b0337.png', 'cmp_b0338.png', 'cmp_b0339.png', 'cmp_b0340.png', 'cmp_b0341.png', 'cmp_b0342.png', 'cmp_b0343.png', 'cmp_b0344.png', 'cmp_b0345.png', 'cmp_b0346.png', 'cmp_b0347.png', 'cmp_b0348.png', 'cmp_b0349.png', 'cmp_b0350.png', 'cmp_b0351.png', 'cmp_b0352.png', 'cmp_b0353.png', 'cmp_b0354.png', 'cmp_b0355.png', 'cmp_b0356.png', 'cmp_b0357.png', 'cmp_b0358.png', 'cmp_b0359.png', 'cmp_b0360.png', 'cmp_b0361.png', 'cmp_b0362.png', 'cmp_b0363.png', 'cmp_b0364.png', 'cmp_b0365.png', 'cmp_b0366.png', 'cmp_b0367.png', 'cmp_b0368.png', 'cmp_b0369.png', 'cmp_b0370.png', 'cmp_b0371.png', 'cmp_b0372.png', 'cmp_b0373.png', 'cmp_b0374.png', 'cmp_b0375.png', 'cmp_b0376.png', 'cmp_b0377.png', 'cmp_b0378.png']
+cmp_b0001.jpg cmp_b0001.png
+inh, inw, inc:  1024 543 3
+tah, taw, tac:  1024 543 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0002.jpg cmp_b0002.png
+inh, inw, inc:  1024 398 3
+tah, taw, tac:  1024 398 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0003.jpg cmp_b0003.png
+inh, inw, inc:  449 1024 3
+tah, taw, tac:  449 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0004.jpg cmp_b0004.png
+inh, inw, inc:  691 1024 3
+tah, taw, tac:  691 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0005.jpg cmp_b0005.png
+inh, inw, inc:  1024 682 3
+tah, taw, tac:  1024 682 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0006.jpg cmp_b0006.png
+inh, inw, inc:  1024 584 3
+tah, taw, tac:  1024 584 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0007.jpg cmp_b0007.png
+inh, inw, inc:  1024 636 3
+tah, taw, tac:  1024 636 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0008.jpg cmp_b0008.png
+inh, inw, inc:  1024 413 3
+tah, taw, tac:  1024 413 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0009.jpg cmp_b0009.png
+inh, inw, inc:  1024 399 3
+tah, taw, tac:  1024 399 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0010.jpg cmp_b0010.png
+inh, inw, inc:  1024 589 3
+tah, taw, tac:  1024 589 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0011.jpg cmp_b0011.png
+inh, inw, inc:  1024 383 3
+tah, taw, tac:  1024 383 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0012.jpg cmp_b0012.png
+inh, inw, inc:  1024 693 3
+tah, taw, tac:  1024 693 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0013.jpg cmp_b0013.png
+inh, inw, inc:  1024 996 3
+tah, taw, tac:  1024 996 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0014.jpg cmp_b0014.png
+inh, inw, inc:  1024 753 3
+tah, taw, tac:  1024 753 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0015.jpg cmp_b0015.png
+inh, inw, inc:  1024 680 3
+tah, taw, tac:  1024 680 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0016.jpg cmp_b0016.png
+inh, inw, inc:  1024 672 3
+tah, taw, tac:  1024 672 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0017.jpg cmp_b0017.png
+inh, inw, inc:  1024 1020 3
+tah, taw, tac:  1024 1020 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0018.jpg cmp_b0018.png
+inh, inw, inc:  710 1024 3
+tah, taw, tac:  710 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0019.jpg cmp_b0019.png
+inh, inw, inc:  889 1024 3
+tah, taw, tac:  889 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0020.jpg cmp_b0020.png
+inh, inw, inc:  543 1024 3
+tah, taw, tac:  543 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0021.jpg cmp_b0021.png
+inh, inw, inc:  500 1024 3
+tah, taw, tac:  500 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0022.jpg cmp_b0022.png
+inh, inw, inc:  1024 984 3
+tah, taw, tac:  1024 984 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0023.jpg cmp_b0023.png
+inh, inw, inc:  1024 855 3
+tah, taw, tac:  1024 855 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0024.jpg cmp_b0024.png
+inh, inw, inc:  1024 739 3
+tah, taw, tac:  1024 739 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0025.jpg cmp_b0025.png
+inh, inw, inc:  1024 760 3
+tah, taw, tac:  1024 760 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0026.jpg cmp_b0026.png
+inh, inw, inc:  1024 701 3
+tah, taw, tac:  1024 701 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0027.jpg cmp_b0027.png
+inh, inw, inc:  1024 745 3
+tah, taw, tac:  1024 745 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0028.jpg cmp_b0028.png
+inh, inw, inc:  1024 1004 3
+tah, taw, tac:  1024 1004 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0029.jpg cmp_b0029.png
+inh, inw, inc:  1024 848 3
+tah, taw, tac:  1024 848 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0030.jpg cmp_b0030.png
+inh, inw, inc:  592 1024 3
+tah, taw, tac:  592 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0031.jpg cmp_b0031.png
+inh, inw, inc:  993 1024 3
+tah, taw, tac:  993 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0032.jpg cmp_b0032.png
+inh, inw, inc:  732 1024 3
+tah, taw, tac:  732 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0033.jpg cmp_b0033.png
+inh, inw, inc:  828 1024 3
+tah, taw, tac:  828 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0034.jpg cmp_b0034.png
+inh, inw, inc:  1024 854 3
+tah, taw, tac:  1024 854 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0035.jpg cmp_b0035.png
+inh, inw, inc:  770 1024 3
+tah, taw, tac:  770 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0036.jpg cmp_b0036.png
+inh, inw, inc:  947 1024 3
+tah, taw, tac:  947 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0037.jpg cmp_b0037.png
+inh, inw, inc:  994 1024 3
+tah, taw, tac:  994 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0038.jpg cmp_b0038.png
+inh, inw, inc:  1024 721 3
+tah, taw, tac:  1024 721 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0039.jpg cmp_b0039.png
+inh, inw, inc:  1024 775 3
+tah, taw, tac:  1024 775 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0040.jpg cmp_b0040.png
+inh, inw, inc:  1024 687 3
+tah, taw, tac:  1024 687 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0041.jpg cmp_b0041.png
+inh, inw, inc:  954 1024 3
+tah, taw, tac:  954 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0042.jpg cmp_b0042.png
+inh, inw, inc:  1024 933 3
+tah, taw, tac:  1024 933 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0043.jpg cmp_b0043.png
+inh, inw, inc:  1024 550 3
+tah, taw, tac:  1024 550 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0044.jpg cmp_b0044.png
+inh, inw, inc:  1024 591 3
+tah, taw, tac:  1024 591 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0045.jpg cmp_b0045.png
+inh, inw, inc:  1024 704 3
+tah, taw, tac:  1024 704 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0046.jpg cmp_b0046.png
+inh, inw, inc:  1024 778 3
+tah, taw, tac:  1024 778 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0047.jpg cmp_b0047.png
+inh, inw, inc:  1024 849 3
+tah, taw, tac:  1024 849 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0048.jpg cmp_b0048.png
+inh, inw, inc:  1024 696 3
+tah, taw, tac:  1024 696 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0049.jpg cmp_b0049.png
+inh, inw, inc:  1024 715 3
+tah, taw, tac:  1024 715 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0050.jpg cmp_b0050.png
+inh, inw, inc:  1024 636 3
+tah, taw, tac:  1024 636 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0051.jpg cmp_b0051.png
+inh, inw, inc:  810 1024 3
+tah, taw, tac:  810 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0052.jpg cmp_b0052.png
+inh, inw, inc:  942 1024 3
+tah, taw, tac:  942 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0053.jpg cmp_b0053.png
+inh, inw, inc:  1015 1024 3
+tah, taw, tac:  1015 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0054.jpg cmp_b0054.png
+inh, inw, inc:  1024 809 3
+tah, taw, tac:  1024 809 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0055.jpg cmp_b0055.png
+inh, inw, inc:  955 1024 3
+tah, taw, tac:  955 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0056.jpg cmp_b0056.png
+inh, inw, inc:  1024 483 3
+tah, taw, tac:  1024 483 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0057.jpg cmp_b0057.png
+inh, inw, inc:  1024 497 3
+tah, taw, tac:  1024 497 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0058.jpg cmp_b0058.png
+inh, inw, inc:  690 1024 3
+tah, taw, tac:  690 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0059.jpg cmp_b0059.png
+inh, inw, inc:  1024 725 3
+tah, taw, tac:  1024 725 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0060.jpg cmp_b0060.png
+inh, inw, inc:  1024 533 3
+tah, taw, tac:  1024 533 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0061.jpg cmp_b0061.png
+inh, inw, inc:  1024 321 3
+tah, taw, tac:  1024 321 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0062.jpg cmp_b0062.png
+inh, inw, inc:  1024 595 3
+tah, taw, tac:  1024 595 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0063.jpg cmp_b0063.png
+inh, inw, inc:  1024 296 3
+tah, taw, tac:  1024 296 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0064.jpg cmp_b0064.png
+inh, inw, inc:  1024 241 3
+tah, taw, tac:  1024 241 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0065.jpg cmp_b0065.png
+inh, inw, inc:  1024 297 3
+tah, taw, tac:  1024 297 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0066.jpg cmp_b0066.png
+inh, inw, inc:  1024 616 3
+tah, taw, tac:  1024 616 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0067.jpg cmp_b0067.png
+inh, inw, inc:  1024 460 3
+tah, taw, tac:  1024 460 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0068.jpg cmp_b0068.png
+inh, inw, inc:  1024 399 3
+tah, taw, tac:  1024 399 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0069.jpg cmp_b0069.png
+inh, inw, inc:  1024 840 3
+tah, taw, tac:  1024 840 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0070.jpg cmp_b0070.png
+inh, inw, inc:  1024 449 3
+tah, taw, tac:  1024 449 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0071.jpg cmp_b0071.png
+inh, inw, inc:  1024 835 3
+tah, taw, tac:  1024 835 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0072.jpg cmp_b0072.png
+inh, inw, inc:  1024 586 3
+tah, taw, tac:  1024 586 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0073.jpg cmp_b0073.png
+inh, inw, inc:  917 1024 3
+tah, taw, tac:  917 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0074.jpg cmp_b0074.png
+inh, inw, inc:  839 1024 3
+tah, taw, tac:  839 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0075.jpg cmp_b0075.png
+inh, inw, inc:  1024 445 3
+tah, taw, tac:  1024 445 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0076.jpg cmp_b0076.png
+inh, inw, inc:  1024 666 3
+tah, taw, tac:  1024 666 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0077.jpg cmp_b0077.png
+inh, inw, inc:  1024 786 3
+tah, taw, tac:  1024 786 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0078.jpg cmp_b0078.png
+inh, inw, inc:  1024 805 3
+tah, taw, tac:  1024 805 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0079.jpg cmp_b0079.png
+inh, inw, inc:  1024 601 3
+tah, taw, tac:  1024 601 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0080.jpg cmp_b0080.png
+inh, inw, inc:  1024 503 3
+tah, taw, tac:  1024 503 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0081.jpg cmp_b0081.png
+inh, inw, inc:  514 1024 3
+tah, taw, tac:  514 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0082.jpg cmp_b0082.png
+inh, inw, inc:  758 1024 3
+tah, taw, tac:  758 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0083.jpg cmp_b0083.png
+inh, inw, inc:  827 1024 3
+tah, taw, tac:  827 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0084.jpg cmp_b0084.png
+inh, inw, inc:  995 1024 3
+tah, taw, tac:  995 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0085.jpg cmp_b0085.png
+inh, inw, inc:  828 1024 3
+tah, taw, tac:  828 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0086.jpg cmp_b0086.png
+inh, inw, inc:  703 1024 3
+tah, taw, tac:  703 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0087.jpg cmp_b0087.png
+inh, inw, inc:  530 1024 3
+tah, taw, tac:  530 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0088.jpg cmp_b0088.png
+inh, inw, inc:  441 1024 3
+tah, taw, tac:  441 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0089.jpg cmp_b0089.png
+inh, inw, inc:  365 1024 3
+tah, taw, tac:  365 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0090.jpg cmp_b0090.png
+inh, inw, inc:  1024 813 3
+tah, taw, tac:  1024 813 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0091.jpg cmp_b0091.png
+inh, inw, inc:  1024 929 3
+tah, taw, tac:  1024 929 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0092.jpg cmp_b0092.png
+inh, inw, inc:  1024 844 3
+tah, taw, tac:  1024 844 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0093.jpg cmp_b0093.png
+inh, inw, inc:  723 1024 3
+tah, taw, tac:  723 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0094.jpg cmp_b0094.png
+inh, inw, inc:  1024 721 3
+tah, taw, tac:  1024 721 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0095.jpg cmp_b0095.png
+inh, inw, inc:  1024 781 3
+tah, taw, tac:  1024 781 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0096.jpg cmp_b0096.png
+inh, inw, inc:  627 1024 3
+tah, taw, tac:  627 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0097.jpg cmp_b0097.png
+inh, inw, inc:  883 1024 3
+tah, taw, tac:  883 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0098.jpg cmp_b0098.png
+inh, inw, inc:  1024 802 3
+tah, taw, tac:  1024 802 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0099.jpg cmp_b0099.png
+inh, inw, inc:  737 1024 3
+tah, taw, tac:  737 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0100.jpg cmp_b0100.png
+inh, inw, inc:  1024 726 3
+tah, taw, tac:  1024 726 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0101.jpg cmp_b0101.png
+inh, inw, inc:  1024 845 3
+tah, taw, tac:  1024 845 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0102.jpg cmp_b0102.png
+inh, inw, inc:  768 1024 3
+tah, taw, tac:  768 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0103.jpg cmp_b0103.png
+inh, inw, inc:  1024 807 3
+tah, taw, tac:  1024 807 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0104.jpg cmp_b0104.png
+inh, inw, inc:  666 1024 3
+tah, taw, tac:  666 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0105.jpg cmp_b0105.png
+inh, inw, inc:  507 1024 3
+tah, taw, tac:  507 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0106.jpg cmp_b0106.png
+inh, inw, inc:  574 1024 3
+tah, taw, tac:  574 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0107.jpg cmp_b0107.png
+inh, inw, inc:  751 1024 3
+tah, taw, tac:  751 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0108.jpg cmp_b0108.png
+inh, inw, inc:  766 1024 3
+tah, taw, tac:  766 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0109.jpg cmp_b0109.png
+inh, inw, inc:  825 1024 3
+tah, taw, tac:  825 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0110.jpg cmp_b0110.png
+inh, inw, inc:  812 1024 3
+tah, taw, tac:  812 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0111.jpg cmp_b0111.png
+inh, inw, inc:  1024 689 3
+tah, taw, tac:  1024 689 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0112.jpg cmp_b0112.png
+inh, inw, inc:  1024 754 3
+tah, taw, tac:  1024 754 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0113.jpg cmp_b0113.png
+inh, inw, inc:  1024 951 3
+tah, taw, tac:  1024 951 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0114.jpg cmp_b0114.png
+inh, inw, inc:  1024 987 3
+tah, taw, tac:  1024 987 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0115.jpg cmp_b0115.png
+inh, inw, inc:  1024 687 3
+tah, taw, tac:  1024 687 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0116.jpg cmp_b0116.png
+inh, inw, inc:  1024 804 3
+tah, taw, tac:  1024 804 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0117.jpg cmp_b0117.png
+inh, inw, inc:  643 1024 3
+tah, taw, tac:  643 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0118.jpg cmp_b0118.png
+inh, inw, inc:  704 1024 3
+tah, taw, tac:  704 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0119.jpg cmp_b0119.png
+inh, inw, inc:  846 1024 3
+tah, taw, tac:  846 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0120.jpg cmp_b0120.png
+inh, inw, inc:  767 1024 3
+tah, taw, tac:  767 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0121.jpg cmp_b0121.png
+inh, inw, inc:  758 1024 3
+tah, taw, tac:  758 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0122.jpg cmp_b0122.png
+inh, inw, inc:  717 1024 3
+tah, taw, tac:  717 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0123.jpg cmp_b0123.png
+inh, inw, inc:  780 1024 3
+tah, taw, tac:  780 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0124.jpg cmp_b0124.png
+inh, inw, inc:  805 1024 3
+tah, taw, tac:  805 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0125.jpg cmp_b0125.png
+inh, inw, inc:  722 1024 3
+tah, taw, tac:  722 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0126.jpg cmp_b0126.png
+inh, inw, inc:  752 1024 3
+tah, taw, tac:  752 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0127.jpg cmp_b0127.png
+inh, inw, inc:  795 1024 3
+tah, taw, tac:  795 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0128.jpg cmp_b0128.png
+inh, inw, inc:  771 1024 3
+tah, taw, tac:  771 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0129.jpg cmp_b0129.png
+inh, inw, inc:  765 1024 3
+tah, taw, tac:  765 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0130.jpg cmp_b0130.png
+inh, inw, inc:  761 1024 3
+tah, taw, tac:  761 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0131.jpg cmp_b0131.png
+inh, inw, inc:  1024 851 3
+tah, taw, tac:  1024 851 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0132.jpg cmp_b0132.png
+inh, inw, inc:  1024 876 3
+tah, taw, tac:  1024 876 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0133.jpg cmp_b0133.png
+inh, inw, inc:  1024 890 3
+tah, taw, tac:  1024 890 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0134.jpg cmp_b0134.png
+inh, inw, inc:  568 1024 3
+tah, taw, tac:  568 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0135.jpg cmp_b0135.png
+inh, inw, inc:  718 1024 3
+tah, taw, tac:  718 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0136.jpg cmp_b0136.png
+inh, inw, inc:  731 1024 3
+tah, taw, tac:  731 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0137.jpg cmp_b0137.png
+inh, inw, inc:  737 1024 3
+tah, taw, tac:  737 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0138.jpg cmp_b0138.png
+inh, inw, inc:  776 1024 3
+tah, taw, tac:  776 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0139.jpg cmp_b0139.png
+inh, inw, inc:  732 1024 3
+tah, taw, tac:  732 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0140.jpg cmp_b0140.png
+inh, inw, inc:  624 1024 3
+tah, taw, tac:  624 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0141.jpg cmp_b0141.png
+inh, inw, inc:  589 1024 3
+tah, taw, tac:  589 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0142.jpg cmp_b0142.png
+inh, inw, inc:  800 1024 3
+tah, taw, tac:  800 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0143.jpg cmp_b0143.png
+inh, inw, inc:  977 1024 3
+tah, taw, tac:  977 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0144.jpg cmp_b0144.png
+inh, inw, inc:  677 1024 3
+tah, taw, tac:  677 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0145.jpg cmp_b0145.png
+inh, inw, inc:  764 1024 3
+tah, taw, tac:  764 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0146.jpg cmp_b0146.png
+inh, inw, inc:  1024 989 3
+tah, taw, tac:  1024 989 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0147.jpg cmp_b0147.png
+inh, inw, inc:  669 1024 3
+tah, taw, tac:  669 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0148.jpg cmp_b0148.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0149.jpg cmp_b0149.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0150.jpg cmp_b0150.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0151.jpg cmp_b0151.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0152.jpg cmp_b0152.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0153.jpg cmp_b0153.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0154.jpg cmp_b0154.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0155.jpg cmp_b0155.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0156.jpg cmp_b0156.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0157.jpg cmp_b0157.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0158.jpg cmp_b0158.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0159.jpg cmp_b0159.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0160.jpg cmp_b0160.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0161.jpg cmp_b0161.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0162.jpg cmp_b0162.png
+inh, inw, inc:  870 1024 3
+tah, taw, tac:  870 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0163.jpg cmp_b0163.png
+inh, inw, inc:  1024 749 3
+tah, taw, tac:  1024 749 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0164.jpg cmp_b0164.png
+inh, inw, inc:  853 1024 3
+tah, taw, tac:  853 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0165.jpg cmp_b0165.png
+inh, inw, inc:  1001 1024 3
+tah, taw, tac:  1001 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0166.jpg cmp_b0166.png
+inh, inw, inc:  757 1024 3
+tah, taw, tac:  757 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0167.jpg cmp_b0167.png
+inh, inw, inc:  1024 837 3
+tah, taw, tac:  1024 837 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0168.jpg cmp_b0168.png
+inh, inw, inc:  974 1024 3
+tah, taw, tac:  974 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0169.jpg cmp_b0169.png
+inh, inw, inc:  803 1024 3
+tah, taw, tac:  803 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0170.jpg cmp_b0170.png
+inh, inw, inc:  1024 858 3
+tah, taw, tac:  1024 858 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0171.jpg cmp_b0171.png
+inh, inw, inc:  1024 933 3
+tah, taw, tac:  1024 933 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0172.jpg cmp_b0172.png
+inh, inw, inc:  812 1024 3
+tah, taw, tac:  812 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0173.jpg cmp_b0173.png
+inh, inw, inc:  1024 777 3
+tah, taw, tac:  1024 777 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0174.jpg cmp_b0174.png
+inh, inw, inc:  780 1024 3
+tah, taw, tac:  780 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0175.jpg cmp_b0175.png
+inh, inw, inc:  795 1024 3
+tah, taw, tac:  795 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0176.jpg cmp_b0176.png
+inh, inw, inc:  836 1024 3
+tah, taw, tac:  836 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0177.jpg cmp_b0177.png
+inh, inw, inc:  830 1024 3
+tah, taw, tac:  830 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0178.jpg cmp_b0178.png
+inh, inw, inc:  780 1024 3
+tah, taw, tac:  780 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0179.jpg cmp_b0179.png
+inh, inw, inc:  814 1024 3
+tah, taw, tac:  814 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0180.jpg cmp_b0180.png
+inh, inw, inc:  800 1024 3
+tah, taw, tac:  800 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0181.jpg cmp_b0181.png
+inh, inw, inc:  1024 804 3
+tah, taw, tac:  1024 804 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0182.jpg cmp_b0182.png
+inh, inw, inc:  1024 671 3
+tah, taw, tac:  1024 671 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0183.jpg cmp_b0183.png
+inh, inw, inc:  1024 720 3
+tah, taw, tac:  1024 720 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0184.jpg cmp_b0184.png
+inh, inw, inc:  1024 571 3
+tah, taw, tac:  1024 571 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0185.jpg cmp_b0185.png
+inh, inw, inc:  1024 748 3
+tah, taw, tac:  1024 748 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0186.jpg cmp_b0186.png
+inh, inw, inc:  1024 652 3
+tah, taw, tac:  1024 652 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0187.jpg cmp_b0187.png
+inh, inw, inc:  993 1024 3
+tah, taw, tac:  993 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0188.jpg cmp_b0188.png
+inh, inw, inc:  1024 873 3
+tah, taw, tac:  1024 873 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0189.jpg cmp_b0189.png
+inh, inw, inc:  1024 561 3
+tah, taw, tac:  1024 561 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0190.jpg cmp_b0190.png
+inh, inw, inc:  588 1024 3
+tah, taw, tac:  588 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0191.jpg cmp_b0191.png
+inh, inw, inc:  1024 824 3
+tah, taw, tac:  1024 824 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0192.jpg cmp_b0192.png
+inh, inw, inc:  1024 620 3
+tah, taw, tac:  1024 620 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0193.jpg cmp_b0193.png
+inh, inw, inc:  908 1024 3
+tah, taw, tac:  908 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0194.jpg cmp_b0194.png
+inh, inw, inc:  847 1024 3
+tah, taw, tac:  847 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0195.jpg cmp_b0195.png
+inh, inw, inc:  1024 654 3
+tah, taw, tac:  1024 654 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0196.jpg cmp_b0196.png
+inh, inw, inc:  468 1024 3
+tah, taw, tac:  468 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0197.jpg cmp_b0197.png
+inh, inw, inc:  589 1024 3
+tah, taw, tac:  589 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0198.jpg cmp_b0198.png
+inh, inw, inc:  679 1024 3
+tah, taw, tac:  679 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0199.jpg cmp_b0199.png
+inh, inw, inc:  1024 688 3
+tah, taw, tac:  1024 688 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0200.jpg cmp_b0200.png
+inh, inw, inc:  562 1024 3
+tah, taw, tac:  562 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0201.jpg cmp_b0201.png
+inh, inw, inc:  1024 957 3
+tah, taw, tac:  1024 957 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0202.jpg cmp_b0202.png
+inh, inw, inc:  698 1024 3
+tah, taw, tac:  698 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0203.jpg cmp_b0203.png
+inh, inw, inc:  628 1024 3
+tah, taw, tac:  628 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0204.jpg cmp_b0204.png
+inh, inw, inc:  1024 910 3
+tah, taw, tac:  1024 910 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0205.jpg cmp_b0205.png
+inh, inw, inc:  686 1024 3
+tah, taw, tac:  686 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0206.jpg cmp_b0206.png
+inh, inw, inc:  555 1024 3
+tah, taw, tac:  555 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0207.jpg cmp_b0207.png
+inh, inw, inc:  1024 649 3
+tah, taw, tac:  1024 649 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0208.jpg cmp_b0208.png
+inh, inw, inc:  770 1024 3
+tah, taw, tac:  770 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0209.jpg cmp_b0209.png
+inh, inw, inc:  558 1024 3
+tah, taw, tac:  558 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0210.jpg cmp_b0210.png
+inh, inw, inc:  594 1024 3
+tah, taw, tac:  594 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0211.jpg cmp_b0211.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0212.jpg cmp_b0212.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0213.jpg cmp_b0213.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0214.jpg cmp_b0214.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0215.jpg cmp_b0215.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0216.jpg cmp_b0216.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0217.jpg cmp_b0217.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0218.jpg cmp_b0218.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0219.jpg cmp_b0219.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0220.jpg cmp_b0220.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0221.jpg cmp_b0221.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0222.jpg cmp_b0222.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0223.jpg cmp_b0223.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0224.jpg cmp_b0224.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0225.jpg cmp_b0225.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0226.jpg cmp_b0226.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0227.jpg cmp_b0227.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0228.jpg cmp_b0228.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0229.jpg cmp_b0229.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0230.jpg cmp_b0230.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0231.jpg cmp_b0231.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0232.jpg cmp_b0232.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0233.jpg cmp_b0233.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0234.jpg cmp_b0234.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0235.jpg cmp_b0235.png
+inh, inw, inc:  1024 768 3
+tah, taw, tac:  1024 768 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0236.jpg cmp_b0236.png
+inh, inw, inc:  593 1024 3
+tah, taw, tac:  593 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0237.jpg cmp_b0237.png
+inh, inw, inc:  660 1024 3
+tah, taw, tac:  660 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0238.jpg cmp_b0238.png
+inh, inw, inc:  627 1024 3
+tah, taw, tac:  627 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0239.jpg cmp_b0239.png
+inh, inw, inc:  496 1024 3
+tah, taw, tac:  496 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0240.jpg cmp_b0240.png
+inh, inw, inc:  595 1024 3
+tah, taw, tac:  595 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0241.jpg cmp_b0241.png
+inh, inw, inc:  614 1024 3
+tah, taw, tac:  614 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0242.jpg cmp_b0242.png
+inh, inw, inc:  762 1024 3
+tah, taw, tac:  762 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0243.jpg cmp_b0243.png
+inh, inw, inc:  637 1024 3
+tah, taw, tac:  637 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0244.jpg cmp_b0244.png
+inh, inw, inc:  586 1024 3
+tah, taw, tac:  586 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0245.jpg cmp_b0245.png
+inh, inw, inc:  608 1024 3
+tah, taw, tac:  608 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0246.jpg cmp_b0246.png
+inh, inw, inc:  975 1024 3
+tah, taw, tac:  975 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0247.jpg cmp_b0247.png
+inh, inw, inc:  676 1024 3
+tah, taw, tac:  676 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0248.jpg cmp_b0248.png
+inh, inw, inc:  648 1024 3
+tah, taw, tac:  648 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0249.jpg cmp_b0249.png
+inh, inw, inc:  1024 842 3
+tah, taw, tac:  1024 842 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0250.jpg cmp_b0250.png
+inh, inw, inc:  1024 882 3
+tah, taw, tac:  1024 882 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0251.jpg cmp_b0251.png
+inh, inw, inc:  1024 810 3
+tah, taw, tac:  1024 810 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0252.jpg cmp_b0252.png
+inh, inw, inc:  1024 888 3
+tah, taw, tac:  1024 888 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0253.jpg cmp_b0253.png
+inh, inw, inc:  938 1024 3
+tah, taw, tac:  938 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0254.jpg cmp_b0254.png
+inh, inw, inc:  992 1024 3
+tah, taw, tac:  992 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0255.jpg cmp_b0255.png
+inh, inw, inc:  1024 743 3
+tah, taw, tac:  1024 743 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0256.jpg cmp_b0256.png
+inh, inw, inc:  1024 902 3
+tah, taw, tac:  1024 902 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0257.jpg cmp_b0257.png
+inh, inw, inc:  1024 834 3
+tah, taw, tac:  1024 834 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0258.jpg cmp_b0258.png
+inh, inw, inc:  1024 996 3
+tah, taw, tac:  1024 996 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0259.jpg cmp_b0259.png
+inh, inw, inc:  762 1024 3
+tah, taw, tac:  762 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0260.jpg cmp_b0260.png
+inh, inw, inc:  1024 753 3
+tah, taw, tac:  1024 753 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0261.jpg cmp_b0261.png
+inh, inw, inc:  943 1024 3
+tah, taw, tac:  943 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0262.jpg cmp_b0262.png
+inh, inw, inc:  1007 1024 3
+tah, taw, tac:  1007 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0263.jpg cmp_b0263.png
+inh, inw, inc:  1024 858 3
+tah, taw, tac:  1024 858 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0264.jpg cmp_b0264.png
+inh, inw, inc:  1024 948 3
+tah, taw, tac:  1024 948 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0265.jpg cmp_b0265.png
+inh, inw, inc:  1024 967 3
+tah, taw, tac:  1024 967 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0323.jpg cmp_b0323.png
+inh, inw, inc:  437 599 3
+tah, taw, tac:  437 599 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0324.jpg cmp_b0324.png
+inh, inw, inc:  406 585 3
+tah, taw, tac:  406 585 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0325.jpg cmp_b0325.png
+inh, inw, inc:  444 552 3
+tah, taw, tac:  444 552 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0326.jpg cmp_b0326.png
+inh, inw, inc:  713 1024 3
+tah, taw, tac:  713 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0327.jpg cmp_b0327.png
+inh, inw, inc:  647 596 3
+tah, taw, tac:  647 596 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0328.jpg cmp_b0328.png
+inh, inw, inc:  456 638 3
+tah, taw, tac:  456 638 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0329.jpg cmp_b0329.png
+inh, inw, inc:  419 411 3
+tah, taw, tac:  419 411 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0330.jpg cmp_b0330.png
+inh, inw, inc:  554 700 3
+tah, taw, tac:  554 700 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0331.jpg cmp_b0331.png
+inh, inw, inc:  658 559 3
+tah, taw, tac:  658 559 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0332.jpg cmp_b0332.png
+inh, inw, inc:  700 591 3
+tah, taw, tac:  700 591 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0333.jpg cmp_b0333.png
+inh, inw, inc:  529 738 3
+tah, taw, tac:  529 738 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0334.jpg cmp_b0334.png
+inh, inw, inc:  459 609 3
+tah, taw, tac:  459 609 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0335.jpg cmp_b0335.png
+inh, inw, inc:  373 590 3
+tah, taw, tac:  373 590 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0336.jpg cmp_b0336.png
+inh, inw, inc:  458 631 3
+tah, taw, tac:  458 631 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0337.jpg cmp_b0337.png
+inh, inw, inc:  487 634 3
+tah, taw, tac:  487 634 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0338.jpg cmp_b0338.png
+inh, inw, inc:  667 858 3
+tah, taw, tac:  667 858 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0339.jpg cmp_b0339.png
+inh, inw, inc:  578 1011 3
+tah, taw, tac:  578 1011 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0340.jpg cmp_b0340.png
+inh, inw, inc:  416 685 3
+tah, taw, tac:  416 685 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0341.jpg cmp_b0341.png
+inh, inw, inc:  438 626 3
+tah, taw, tac:  438 626 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0342.jpg cmp_b0342.png
+inh, inw, inc:  323 497 3
+tah, taw, tac:  323 497 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0343.jpg cmp_b0343.png
+inh, inw, inc:  457 705 3
+tah, taw, tac:  457 705 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0344.jpg cmp_b0344.png
+inh, inw, inc:  356 592 3
+tah, taw, tac:  356 592 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0345.jpg cmp_b0345.png
+inh, inw, inc:  506 657 3
+tah, taw, tac:  506 657 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0346.jpg cmp_b0346.png
+inh, inw, inc:  448 583 3
+tah, taw, tac:  448 583 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0347.jpg cmp_b0347.png
+inh, inw, inc:  468 666 3
+tah, taw, tac:  468 666 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0348.jpg cmp_b0348.png
+inh, inw, inc:  396 992 3
+tah, taw, tac:  396 992 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0349.jpg cmp_b0349.png
+inh, inw, inc:  473 568 3
+tah, taw, tac:  473 568 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0350.jpg cmp_b0350.png
+inh, inw, inc:  207 1024 3
+tah, taw, tac:  207 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0351.jpg cmp_b0351.png
+inh, inw, inc:  731 1024 3
+tah, taw, tac:  731 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0352.jpg cmp_b0352.png
+inh, inw, inc:  786 1024 3
+tah, taw, tac:  786 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0353.jpg cmp_b0353.png
+inh, inw, inc:  688 1024 3
+tah, taw, tac:  688 1024 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0354.jpg cmp_b0354.png
+inh, inw, inc:  531 885 3
+tah, taw, tac:  531 885 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0355.jpg cmp_b0355.png
+inh, inw, inc:  386 810 3
+tah, taw, tac:  386 810 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0356.jpg cmp_b0356.png
+inh, inw, inc:  766 672 3
+tah, taw, tac:  766 672 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0357.jpg cmp_b0357.png
+inh, inw, inc:  724 718 3
+tah, taw, tac:  724 718 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0358.jpg cmp_b0358.png
+inh, inw, inc:  454 487 3
+tah, taw, tac:  454 487 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0359.jpg cmp_b0359.png
+inh, inw, inc:  710 884 3
+tah, taw, tac:  710 884 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0360.jpg cmp_b0360.png
+inh, inw, inc:  452 542 3
+tah, taw, tac:  452 542 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0361.jpg cmp_b0361.png
+inh, inw, inc:  433 601 3
+tah, taw, tac:  433 601 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0362.jpg cmp_b0362.png
+inh, inw, inc:  447 490 3
+tah, taw, tac:  447 490 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0363.jpg cmp_b0363.png
+inh, inw, inc:  622 468 3
+tah, taw, tac:  622 468 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0364.jpg cmp_b0364.png
+inh, inw, inc:  482 614 3
+tah, taw, tac:  482 614 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0365.jpg cmp_b0365.png
+inh, inw, inc:  365 529 3
+tah, taw, tac:  365 529 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0366.jpg cmp_b0366.png
+inh, inw, inc:  363 631 3
+tah, taw, tac:  363 631 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0367.jpg cmp_b0367.png
+inh, inw, inc:  447 759 3
+tah, taw, tac:  447 759 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0368.jpg cmp_b0368.png
+inh, inw, inc:  476 544 3
+tah, taw, tac:  476 544 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0369.jpg cmp_b0369.png
+inh, inw, inc:  446 455 3
+tah, taw, tac:  446 455 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0370.jpg cmp_b0370.png
+inh, inw, inc:  532 359 3
+tah, taw, tac:  532 359 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0371.jpg cmp_b0371.png
+inh, inw, inc:  438 643 3
+tah, taw, tac:  438 643 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0372.jpg cmp_b0372.png
+inh, inw, inc:  447 433 3
+tah, taw, tac:  447 433 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0373.jpg cmp_b0373.png
+inh, inw, inc:  445 643 3
+tah, taw, tac:  445 643 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0374.jpg cmp_b0374.png
+inh, inw, inc:  371 612 3
+tah, taw, tac:  371 612 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0375.jpg cmp_b0375.png
+inh, inw, inc:  415 470 3
+tah, taw, tac:  415 470 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0376.jpg cmp_b0376.png
+inh, inw, inc:  606 554 3
+tah, taw, tac:  606 554 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0377.jpg cmp_b0377.png
+inh, inw, inc:  393 593 3
+tah, taw, tac:  393 593 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+cmp_b0378.jpg cmp_b0378.png
+inh, inw, inc:  408 538 3
+tah, taw, tac:  408 538 3
+image shape: inh == tah and inw == taw and inh != inw
+len(rtinput[0] 128
+len(rtinput):  128
+len(rttarget):  128
+inputs.shape:  (100, 128, 128, 3) targets.shape:  (100, 128, 128, 3)
+2018-11-10 21:14:03.935752: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+WARNING:tensorflow:From C:/Users/yuriK/OneDrive/ドキュメント/#colour/code/Tensorflow-Segmentation-master/Tensorflow-Segmentation-master/convolutional_autoencoder.py:347: all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Please use tf.global_variables instead.
+1/100, epoch: 0, cost: 0.5545949935913086, batch time: 151.03088188171387, start time: 7e-07, time:2018-11-10 21:16:37.499270
+2/100, epoch: 0, cost: 0.5442922115325928, batch time: 137.21782183647156, start time: 151.0315149, time:2018-11-10 21:18:54.718093
+3/100, epoch: 1, cost: 0.5302049517631531, batch time: 181.27527952194214, start time: 288.2526182, time:2018-11-10 21:21:55.996391
+4/100, epoch: 1, cost: 0.5247607231140137, batch time: 185.83506798744202, start time: 469.5299136, time:2018-11-10 21:25:01.833461
+5/100, epoch: 2, cost: 0.5215392112731934, batch time: 217.0349245071411, start time: 655.3666295, time:2018-11-10 21:28:38.870384
+6/100, epoch: 2, cost: 0.518772304058075, batch time: 224.72405767440796, start time: 872.4029182, time:2018-11-10 21:32:23.596442
+7/100, epoch: 3, cost: 0.5185126662254333, batch time: 192.5017113685608, start time: 1097.1298008, time:2018-11-10 21:35:36.100152
+8/100, epoch: 3, cost: 0.5176287293434143, batch time: 188.49844217300415, start time: 1289.6333877, time:2018-11-10 21:38:44.600595
+9/100, epoch: 4, cost: 0.5161295533180237, batch time: 191.6441147327423, start time: 1478.1344742, time:2018-11-10 21:41:56.246709
+10/100, epoch: 4, cost: 0.5138317346572876, batch time: 190.11265468597412, start time: 1669.7801349, time:2018-11-10 21:45:06.361367
+11/100, epoch: 5, cost: 0.5131745934486389, batch time: 187.6130290031433, start time: 1859.8946408, time:2018-11-10 21:48:13.976404
+12/100, epoch: 5, cost: 0.5117903351783752, batch time: 183.3961365222931, start time: 2047.5092038, time:2018-11-10 21:51:17.373540
+13/100, epoch: 6, cost: 0.5125473737716675, batch time: 150.86029314994812, start time: 2230.9061326, time:2018-11-10 21:53:48.234837
+14/100, epoch: 6, cost: 0.5122559070587158, batch time: 153.3495216369629, start time: 2381.7672497, time:2018-11-10 21:56:21.585361
+15/100, epoch: 7, cost: 0.5117266774177551, batch time: 109.49402904510498, start time: 2535.118533, time:2018-11-10 21:58:11.081391
+16/100, epoch: 7, cost: 0.5108506083488464, batch time: 110.33955144882202, start time: 2644.6133816, time:2018-11-10 22:00:01.420942
+17/100, epoch: 8, cost: 0.5102741718292236, batch time: 108.44601035118103, start time: 2754.9536943, time:2018-11-10 22:01:49.867954
+18/100, epoch: 8, cost: 0.510236918926239, batch time: 107.05829906463623, start time: 2863.4003024, time:2018-11-10 22:03:36.927257
+19/100, epoch: 9, cost: 0.5096081495285034, batch time: 105.96307492256165, start time: 2970.4595762, time:2018-11-10 22:05:22.891335
+20/100, epoch: 9, cost: 0.5088863372802734, batch time: 105.44929838180542, start time: 3076.4239358, time:2018-11-10 22:07:08.341639
+21/100, epoch: 10, cost: 0.5087222456932068, batch time: 105.46929216384888, start time: 3181.874682, time:2018-11-10 22:08:53.811929
+22/100, epoch: 10, cost: 0.5080522894859314, batch time: 115.2578125, start time: 3287.3439362, time:2018-11-10 22:10:49.069741
+23/100, epoch: 11, cost: 0.506420910358429, batch time: 106.74139904975891, start time: 3402.6023739, time:2018-11-10 22:12:35.811708
+24/100, epoch: 11, cost: 0.507030725479126, batch time: 104.77644658088684, start time: 3509.3439104, time:2018-11-10 22:14:20.589159
+25/100, epoch: 12, cost: 0.5061390399932861, batch time: 105.19085025787354, start time: 3614.1220134, time:2018-11-10 22:16:05.781010
+26/100, epoch: 12, cost: 0.5044616460800171, batch time: 105.73744630813599, start time: 3719.3130411, time:2018-11-10 22:17:51.518457
+27/100, epoch: 13, cost: 0.5041583776473999, batch time: 105.87910151481628, start time: 3825.0511863, time:2018-11-10 22:19:37.398560
+28/100, epoch: 13, cost: 0.5036271214485168, batch time: 107.45165514945984, start time: 3930.9312654, time:2018-11-10 22:21:24.851217
+29/100, epoch: 14, cost: 0.5023208260536194, batch time: 106.36833596229553, start time: 4038.3842099, time:2018-11-10 22:23:11.220544
+30/100, epoch: 14, cost: 0.5016770362854004, batch time: 105.3869731426239, start time: 4144.7531092, time:2018-11-10 22:24:56.608519
+31/100, epoch: 15, cost: 0.5015398859977722, batch time: 106.40115165710449, start time: 4250.1411808, time:2018-11-10 22:26:43.010669
+32/100, epoch: 15, cost: 0.5023183822631836, batch time: 104.35696721076965, start time: 4356.5432073, time:2018-11-10 22:28:27.368640
+33/100, epoch: 16, cost: 0.5007727742195129, batch time: 111.56336712837219, start time: 4460.9017152, time:2018-11-10 22:30:18.933012
+34/100, epoch: 16, cost: 0.5008214116096497, batch time: 110.49413108825684, start time: 4572.4656627, time:2018-11-10 22:32:09.428145
+35/100, epoch: 17, cost: 0.5006935000419617, batch time: 105.4075448513031, start time: 4682.9607096, time:2018-11-10 22:33:54.836692
+36/100, epoch: 17, cost: 0.4997929632663727, batch time: 106.8335497379303, start time: 4788.3684763, time:2018-11-10 22:35:41.670242
+37/100, epoch: 18, cost: 0.5000192523002625, batch time: 105.50701427459717, start time: 4895.202758, time:2018-11-10 22:37:27.178252
+38/100, epoch: 18, cost: 0.5003142952919006, batch time: 105.55391597747803, start time: 5000.71112, time:2018-11-10 22:39:12.733764
+39/100, epoch: 19, cost: 0.49910199642181396, batch time: 109.5928213596344, start time: 5106.266952, time:2018-11-10 22:41:02.328598
+40/100, epoch: 19, cost: 0.49979570508003235, batch time: 107.7146143913269, start time: 5215.8604155, time:2018-11-10 22:42:50.043212
+41/100, epoch: 20, cost: 0.4982973635196686, batch time: 107.31197333335876, start time: 5323.5759206, time:2018-11-10 22:44:37.356180
+42/100, epoch: 20, cost: 0.49872782826423645, batch time: 119.47477674484253, start time: 5430.88856, time:2018-11-10 22:46:36.831957
+43/100, epoch: 21, cost: 0.4987616539001465, batch time: 107.69694900512695, start time: 5550.3649279, time:2018-11-10 22:48:24.529908
+44/100, epoch: 21, cost: 0.4983060359954834, batch time: 109.96621131896973, start time: 5658.0622305, time:2018-11-10 22:50:14.498124
+45/100, epoch: 22, cost: 0.4980562627315521, batch time: 118.35172009468079, start time: 5768.0304788, time:2018-11-10 22:52:12.850842
+46/100, epoch: 22, cost: 0.49789488315582275, batch time: 106.25766730308533, start time: 5886.3827253, time:2018-11-10 22:53:59.108509
+47/100, epoch: 23, cost: 0.4975890815258026, batch time: 107.69678068161011, start time: 5992.6414171, time:2018-11-10 22:55:46.806289
+48/100, epoch: 23, cost: 0.4971495568752289, batch time: 107.57068538665771, start time: 6100.338512, time:2018-11-10 22:57:34.377978
+49/100, epoch: 24, cost: 0.49731144309043884, batch time: 105.03748059272766, start time: 6207.9106302, time:2018-11-10 22:59:19.416454
+50/100, epoch: 24, cost: 0.49737831950187683, batch time: 108.56601619720459, start time: 6312.9484015, time:2018-11-10 23:01:07.982470
+51/100, epoch: 25, cost: 0.4976103603839874, batch time: 105.05990076065063, start time: 6421.5150498, time:2018-11-10 23:02:53.043367
+52/100, epoch: 25, cost: 0.4974232316017151, batch time: 104.8424506187439, start time: 6526.5753422, time:2018-11-10 23:04:37.885817
+53/100, epoch: 26, cost: 0.4968249201774597, batch time: 107.09057283401489, start time: 6631.4181511, time:2018-11-10 23:06:24.977391
+54/100, epoch: 26, cost: 0.4962107837200165, batch time: 105.28516483306885, start time: 6738.509372, time:2018-11-10 23:08:10.262556
+55/100, epoch: 27, cost: 0.4961879551410675, batch time: 110.77029418945312, start time: 6843.7955586, time:2018-11-10 23:10:01.033859
+56/100, epoch: 27, cost: 0.4957248270511627, batch time: 118.53153991699219, start time: 6954.5658623, time:2018-11-10 23:11:59.565399
+57/100, epoch: 28, cost: 0.495945543050766, batch time: 108.76541066169739, start time: 7073.0983677, time:2018-11-10 23:13:48.331816
+58/100, epoch: 28, cost: 0.4958747625350952, batch time: 107.0946638584137, start time: 7181.864216, time:2018-11-10 23:15:35.427490
+59/100, epoch: 29, cost: 0.4960543215274811, batch time: 106.771803855896, start time: 7288.9601402, time:2018-11-10 23:17:22.200292
+60/100, epoch: 29, cost: 0.49583899974823, batch time: 104.6718578338623, start time: 7395.7327147, time:2018-11-10 23:19:06.873146
+61/100, epoch: 30, cost: 0.4954608082771301, batch time: 107.95632338523865, start time: 7500.4059042, time:2018-11-10 23:20:54.830471
+62/100, epoch: 30, cost: 0.49600517749786377, batch time: 105.84246492385864, start time: 7608.3629419, time:2018-11-10 23:22:40.673938
+63/100, epoch: 31, cost: 0.4954003095626831, batch time: 104.52236533164978, start time: 7714.2062248, time:2018-11-10 23:24:25.197306
+64/100, epoch: 31, cost: 0.49488046765327454, batch time: 104.65455770492554, start time: 7818.7293584, time:2018-11-10 23:26:09.851864
+65/100, epoch: 32, cost: 0.4952359199523926, batch time: 104.88004899024963, start time: 7923.3845382, time:2018-11-10 23:27:54.732914
+66/100, epoch: 32, cost: 0.4957132637500763, batch time: 104.64974522590637, start time: 8028.2647787, time:2018-11-10 23:29:39.382659
+67/100, epoch: 33, cost: 0.4957272708415985, batch time: 113.20031356811523, start time: 8132.9157412, time:2018-11-10 23:31:32.583974
+68/100, epoch: 33, cost: 0.4949779212474823, batch time: 104.31648635864258, start time: 8246.1167816, time:2018-11-10 23:33:16.901464
+69/100, epoch: 34, cost: 0.495085746049881, batch time: 105.74951338768005, start time: 8350.4344534, time:2018-11-10 23:35:02.651977
+70/100, epoch: 34, cost: 0.49501845240592957, batch time: 104.39098024368286, start time: 8456.1842986, time:2018-11-10 23:36:47.044963
+71/100, epoch: 35, cost: 0.4947884678840637, batch time: 102.11216711997986, start time: 8560.5771864, time:2018-11-10 23:38:29.158128
+72/100, epoch: 35, cost: 0.494771271944046, batch time: 103.41874957084656, start time: 8662.6903314, time:2018-11-10 23:40:12.577937
+73/100, epoch: 36, cost: 0.4946132302284241, batch time: 102.57806658744812, start time: 8766.1104967, time:2018-11-10 23:41:55.157007
+74/100, epoch: 36, cost: 0.4944198429584503, batch time: 102.92192053794861, start time: 8868.6894274, time:2018-11-10 23:43:38.079927
+75/100, epoch: 37, cost: 0.4943244457244873, batch time: 102.2774612903595, start time: 8971.6127504, time:2018-11-10 23:45:20.358393
+76/100, epoch: 37, cost: 0.4963620901107788, batch time: 101.77495002746582, start time: 9073.8909926, time:2018-11-10 23:47:02.134343
+77/100, epoch: 38, cost: 0.4944242835044861, batch time: 103.84996891021729, start time: 9175.666439, time:2018-11-10 23:48:45.984312
+78/100, epoch: 38, cost: 0.49501484632492065, batch time: 113.20063757896423, start time: 9279.516612, time:2018-11-10 23:50:39.185951
+79/100, epoch: 39, cost: 0.49536779522895813, batch time: 104.74721121788025, start time: 9392.7192528, time:2018-11-10 23:52:23.935168
+80/100, epoch: 39, cost: 0.49536076188087463, batch time: 103.9370367527008, start time: 9497.4678054, time:2018-11-10 23:54:07.874202
+81/100, epoch: 40, cost: 0.49515488743782043, batch time: 104.41481423377991, start time: 9601.406273, time:2018-11-10 23:55:52.289016
+82/100, epoch: 40, cost: 0.4947439432144165, batch time: 103.66877913475037, start time: 9705.8214633, time:2018-11-10 23:57:35.958794
+83/100, epoch: 41, cost: 0.4948901832103729, batch time: 104.10704946517944, start time: 9809.4912221, time:2018-11-10 23:59:20.066850
+84/100, epoch: 41, cost: 0.4944540858268738, batch time: 105.56120777130127, start time: 9913.5992744, time:2018-11-11 00:01:05.629059
+85/100, epoch: 42, cost: 0.494477242231369, batch time: 103.44858574867249, start time: 10019.1614473, time:2018-11-11 00:02:49.078643
+86/100, epoch: 42, cost: 0.4937889575958252, batch time: 102.251056432724, start time: 10122.6113665, time:2018-11-11 00:04:31.330699
+87/100, epoch: 43, cost: 0.4942162036895752, batch time: 102.46168279647827, start time: 10224.8628291, time:2018-11-11 00:06:13.793391
+88/100, epoch: 43, cost: 0.4936408996582031, batch time: 103.71881222724915, start time: 10327.3253268, time:2018-11-11 00:07:57.512204
+89/100, epoch: 44, cost: 0.49342942237854004, batch time: 104.09073162078857, start time: 10431.0448845, time:2018-11-11 00:09:41.603935
+90/100, epoch: 44, cost: 0.49345457553863525, batch time: 111.29202795028687, start time: 10535.1359389, time:2018-11-11 00:11:32.895963
+91/100, epoch: 45, cost: 0.4934007525444031, batch time: 102.20386457443237, start time: 10646.428834, time:2018-11-11 00:13:15.100821
+92/100, epoch: 45, cost: 0.4930171072483063, batch time: 104.45431756973267, start time: 10748.6333358, time:2018-11-11 00:14:59.556142
+93/100, epoch: 46, cost: 0.4933844804763794, batch time: 104.5766088962555, start time: 10853.0882999, time:2018-11-11 00:16:44.133754
+94/100, epoch: 46, cost: 0.4928078055381775, batch time: 104.40500736236572, start time: 10957.6661424, time:2018-11-11 00:18:28.539761
+95/100, epoch: 47, cost: 0.4926193356513977, batch time: 103.51794815063477, start time: 11062.0722222, time:2018-11-11 00:20:12.058712
+96/100, epoch: 47, cost: 0.4927334785461426, batch time: 106.86155652999878, start time: 11165.5906651, time:2018-11-11 00:21:58.920269
+97/100, epoch: 48, cost: 0.4930788576602936, batch time: 105.44946575164795, start time: 11272.4527251, time:2018-11-11 00:23:44.371736
+98/100, epoch: 48, cost: 0.4922446310520172, batch time: 105.21444201469421, start time: 11377.9034984, time:2018-11-11 00:25:29.586178
+99/100, epoch: 49, cost: 0.49231189489364624, batch time: 104.81301307678223, start time: 11483.1194926, time:2018-11-11 00:27:14.401192
+100/100, epoch: 49, cost: 0.49233144521713257, batch time: 105.87576985359192, start time: 11587.9333219, time:2018-11-11 00:29:00.277958
+(56, 128, 128, 3)
+Step 100, test accuracy: 0.8196338415145874
+Accuracies in time:  [0.81963384]
+Best accuracy: 0.8196338415145874 in batch 100
+Total time: 11713.35881471634
+
+Process finished with exit code 0
